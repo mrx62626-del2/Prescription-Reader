@@ -89,7 +89,7 @@ const config = {
       throw new Error('Missing required environment variable: GEMINI_API_KEYS or GEMINI_API_KEY')
     })(),
     model:      optionalEnv('GEMINI_MODEL', 'gemini-2.0-flash'),
-    timeoutMs:  parseIntEnv('GEMINI_TIMEOUT_MS', 30000),
+    timeoutMs:  parseIntEnv('GEMINI_TIMEOUT_MS', 90000),
     maxRetries: parseIntEnv('GEMINI_MAX_RETRIES', 3),
     keyCooldownMs: parseIntEnv('GEMINI_KEY_COOLDOWN_MS', 60000),
     supportedMimeTypes: ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'],
